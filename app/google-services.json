@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "467835259902",
+    "project_id": "fisherman-s-guardian",
+    "storage_bucket": "fisherman-s-guardian.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467835259902:android:18dafcaaea1c4edf69ceaf",
+        "android_client_info": {
+          "package_name": "com.example.firshermensguardian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467835259902-drtnddi4legdj0p4e1q8ei62pg2veatn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPmc7sDgRgmyyLJ05NtHigsbynfAVXBv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467835259902-drtnddi4legdj0p4e1q8ei62pg2veatn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

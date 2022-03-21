@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+        android:id="@+id/Home"
+        android:icon="@drawable/nav_home"
+        >
+
+
+    </item>
+    <item android:title="Weather"
+        android:id="@+id/Weather"
+        android:icon="@drawable/nav_weather"
+        
+        >
+
+
+    </item>
+    <item android:title="Alerts"
+        android:id="@+id/Alerts"
+        android:icon="@drawable/nav_alert"
+        >
+
+
+    </item>
+
+    <item android:title="User"
+        android:id="@+id/User"
+        android:icon="@drawable/nav_user"
+        >
+
+
+    </item>
+</menu>

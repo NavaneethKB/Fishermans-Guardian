@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2,3,4"
+    android:background="#fff"
+    >
+    <TableRow>
+        <TextView
+     android:id="@+id/alert_sNo"
+            android:textSize="15dp"
+
+            android:padding="7dp"
+            android:layout_column="1"
+            android:textColor="#000"
+            >
+
+        </TextView>
+        <TextView
+        android:id="@+id/alert_name"
+            android:textSize="15dp"
+            android:textColor="#000"
+
+
+            android:padding="10dp"
+            android:layout_column="1"
+            >
+
+        </TextView>
+        <TextView
+           android:id="@+id/alert_coOrdinates"
+            android:textSize="15dp"
+
+            android:padding="10dp"
+            android:layout_column="1"
+            android:textColor="#000"
+            >
+
+        </TextView>
+
+
+    </TableRow>
+
+</TableLayout>

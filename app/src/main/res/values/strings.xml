@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ModernLogin</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string-array name="alerts">
+        <item>Report a Border Dispute</item>
+        <item>Need assistance with Boat</item>
+        <item>Report a Medical Problem</item>
+    </string-array>
+</resources>

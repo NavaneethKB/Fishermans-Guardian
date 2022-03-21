@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        tools:context=".MapsActivity"></fragment>
+    <LinearLayout
+        android:id="@+id/map_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+android:visibility="invisible"
+       android:layout_marginTop="50dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_gravity="center"
+android:layout_weight="2"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="55dp"
+                   android:textSize="20dp"
+                   android:text="Time"
+                   android:background="@drawable/border"
+                   android:gravity="center"
+                   android:textStyle="bold"
+                   android:textColor="#000"
+
+                   ></TextView>
+               <Chronometer
+                   android:layout_width="120dp"
+                   android:layout_height="55dp"
+                   android:textSize="20dp"
+                android:id="@+id/timer"
+                   android:gravity="center"
+                   android:background="@drawable/border"
+                   android:textColor="#000"></Chronometer>
+           </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="55dp"
+                    android:textSize="20dp"
+                    android:text="Distance From Shore"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+
+                    ></TextView>
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="55dp"
+                    android:textSize="20dp"
+                    android:text="0 Nm"
+                    android:gravity="center"
+                    android:background="@drawable/border"
+                    android:textColor="#000"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:textSize="20dp"
+                        android:text="Current Location"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+
+                        ></TextView>
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="55dp"
+                        android:textSize="20dp"
+                        android:text="77.1234\n8.12365"
+                        android:gravity="center"
+                        android:background="@drawable/border"
+                        android:textColor="#000"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="55dp"
+                        android:textSize="20dp"
+                        android:text="Wind Speed"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+
+                        ></TextView>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content">
+
+
+                    <com.tomer.fadingtextview.FadingTextView
+                        android:id="@+id/fadingTextView"
+                        android:layout_width="120dp"
+                        android:layout_height="55dp"
+                        android:textColor="#000"
+
+
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        app:timeout="5000"
+                        app:texts="@array/examples" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/map_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Help"
+            android:background="#E21717"
+
+            >
+
+        </Button>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/map_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_nav_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+        android:background="#3944F7"
+        android:text="Start"
+        android:textSize="20sp"
+
+        ></Button>
+    <LinearLayout
+        android:id="@+id/help_details"
+android:visibility="invisible"
+        android:layout_width="wrap_content"
+
+        android:layout_marginBottom="10dp"
+
+        android:orientation="horizontal"
+        android:layout_above="@+id/bottom_nav_bar"
+        android:layout_height="wrap_content">
+        <LinearLayout
+android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/border"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+
+                android:background="@drawable/border"
+                android:text=" Dist. to Ship ">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#000"
+
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0.8 Nmi">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/border"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text=" Co-Ordinates ">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#000"
+
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="8.122N 77.334E" >
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/border"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_gravity="center"
+
+                android:background="@drawable/border"
+                android:text="W. Height ">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#000"
+
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="2.1">
+
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+
+        app:menu="@menu/menu_navigation">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>

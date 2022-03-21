@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="examples">
+        <item>15.7 kts</item>
+
+        <item>16 kts</item>
+        <item>15.5 kts</item>
+        <item>15.5 kts</item>
+        <item>15.7 kts</item>
+
+        <item>15.2 kts</item>
+        <item>15.1 kts</item>
+        <item>15.5 kts</item>
+        <item>15.5 kts</item>
+    </string-array>
+</resources>
